@@ -4,6 +4,8 @@
 Поддерживает команды: `SET`, `GET`, `TTL`, `QUIT`.  
 Вводить команды можно простым текстом (через Enter), без ручного добавления `\r\n`.
 
+repo: https://github.com/ganz677/Redis-alike-cache-app
+
 ---
 
 ## Запуск
