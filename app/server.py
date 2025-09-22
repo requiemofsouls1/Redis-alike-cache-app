@@ -26,6 +26,9 @@ class RequestHandler(socketserver.StreamRequestHandler):
             line = self.rfile.readline()
             if not line:
                 break
+            decoded = line.decode("utf-8", errors="replace").strip("\r\n")
+            if not decoded:
+                continue
             try:
                 decoded = line.decode('utf-8', errors='replace')
                 cmd, args = parse_line(decoded)
