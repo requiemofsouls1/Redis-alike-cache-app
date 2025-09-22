@@ -44,8 +44,8 @@ def handle_get(args: List[str], store: InMemoryStorage) -> str:
 
 def handle_ttl(args: List[str], store: InMemoryStorage) -> str:
     if len(args) != 1:
-        return  err("wrong number of arguments for 'ttl'")
-    return store.ttl(args[0])
+        return err("wrong number of arguments for 'TTL'")
+    return str(store.ttl(args[0]))
 
 
 COMMANDS: Dict[str, Handler] = {
