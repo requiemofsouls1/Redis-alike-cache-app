@@ -3,8 +3,6 @@
 Минимальный Redis подобный TCP cache сервис.  
 Поддерживает команды: `SET`, `GET`, `TTL`, `QUIT`.  
 
-repo: https://github.com/ganz677/Redis-alike-cache-app
-
 ---
 
 ## Запуск
